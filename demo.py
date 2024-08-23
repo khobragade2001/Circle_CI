@@ -8,10 +8,10 @@ from selenium.webdriver.support.select import Select
 # pip freeze > requirements.txt
 
 chrome_driver_path = "C:/circle_ci/chromedriver-win64/chromedriver.exe"
-service = Service(executable_path=chrome_driver_path)
-opt = Options()
+# service = Service(executable_path=chrome_driver_path)
+# opt = Options()
 # Initialize the WebDriver with the service
-driver = webdriver.Chrome(service=service, options=opt)
+driver = webdriver.Chrome(chrome_driver_path)
 
 
 driver.maximize_window()
