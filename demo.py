@@ -7,7 +7,7 @@ from selenium.webdriver.support.select import Select
 # making for 'requirements.txt' , following commond used
 # pip freeze > requirements.txt
 
-chrome_driver_path = "C:\\circle_ci\\chromedriver-win64\\chromedriver.exe"
+chrome_driver_path = "C:/circle_ci/chromedriver-win64/chromedriver.exe"
 service = Service(executable_path=chrome_driver_path)
 opt = Options()
 # Initialize the WebDriver with the service
