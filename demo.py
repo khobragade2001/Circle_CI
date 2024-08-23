@@ -9,7 +9,7 @@ from selenium.webdriver.support.select import Select
 opt = Options()
 opt.binary_location = "C:\\circle_ci\\chromedriver-win64\\chromedriver.exe"
 
-driver = webdriver.Chrome(executable_path="C:\\circle_ci\\chromedriver-win64\\chromedriver.exe",options=opt)
+driver = webdriver.Chrome(options=opt)
 driver.maximize_window()
 driver.get("https://the-internet.herokuapp.com/dropdown")
 element = Select(driver.find_element(By.XPATH,"//select[@id='dropdown']"))
