@@ -25,4 +25,3 @@ element = Select(driver.find_element(By.XPATH,"//select[@id='dropdown']"))
 element.select_by_index(2)
 time.sleep(5)
 driver.quit()
-##
