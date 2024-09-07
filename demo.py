@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
-driver_path = "C:/circle_ci/chromedriver/chromedriver.exe"
+driver_path = "C://circle_ci//chromedriver//chromedriver.exe"
 
 # Initialize the Service object with the chromedriver executable path
 service = Service(executable_path=driver_path)
