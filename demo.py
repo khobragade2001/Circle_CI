@@ -7,16 +7,12 @@ from selenium.webdriver.support.select import Select
 # making for 'requirements.txt' , following commond used
 # pip freeze > requirements.txt
 
-chrome_driver_path = "C:/circle_ci/chromedriver-win64/chromedriver.exe"
+#chrome_driver_path = "C:/circle_ci/chromedriver-win64/chromedriver.exe"
 
-# Set up the Chrome options
-options = Options()
-options.add_argument("--headless")  # Example argument; remove if not running headless
-options.add_argument("--disable-gpu")  # Disable GPU acceleration for headless mode
-options.add_argument("--no-sandbox")  # Bypass OS security model
 
 # Create a Service object with the path to ChromeDriver
-service = Service(executable_path=chrome_driver_path)
+#service = Service(executable_path=chrome_driver_path)
+service = Service('C:/circle_ci/chromedriver-win64/chromedriver.exe')
 
 # Initialize the WebDriver with the service and options
 driver = webdriver.Chrome(service=service, options=options)
