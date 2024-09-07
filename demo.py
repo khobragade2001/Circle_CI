@@ -4,13 +4,12 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
-driver_path = "C://circle_ci//chromedriver//chromedriver.exe"
 
-# Initialize the Service object with the chromedriver executable path
-service = Service(executable_path=driver_path)
 
-# Initialize WebDriver using the Service object
-driver = webdriver.Chrome(service=service)
+driver_path = 'C:/circle_ci/chromedriver/chromedriver.exe'
+
+# Create a Chrome driver instance
+driver = webdriver.Chrome(executable_path=driver_path)
 
 
 driver.maximize_window()
