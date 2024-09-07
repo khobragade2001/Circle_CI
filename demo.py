@@ -1,22 +1,11 @@
 import time
 from selenium import webdriver
-from selenium.webdriver.chrome import options
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-# making for 'requirements.txt' , following commond used
-# pip freeze > requirements.txt
 
-#chrome_driver_path = "C:/circle_ci/chromedriver-win64/chromedriver.exe"
-
-
-# Create a Service object with the path to ChromeDriver
-#service = Service(executable_path=chrome_driver_path)
-# service = Service('C:/circle_ci/chromedriver-win64/chromedriver.exe')
-
-# Initialize the WebDriver with the service and options
-driver = webdriver.Chrome(executable_path='C:/circle_ci/chromedriver/chromedriver.exe')
+service = Service('C:/circle_ci/chromedriver/chromedriver.exe')
+driver = webdriver.Chrome(service=service)
 
 
 driver.maximize_window()
