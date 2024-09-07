@@ -3,7 +3,7 @@ version: 2.1
 executors:
   python-executor:
     docker:
-      - image: circleci/python:3.8  # Choose the appropriate Python version
+      - image: cimg/python:3.8 # Choose the appropriate Python version
 
 jobs:
   test:
